@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="test.css">
 </head>
-<body style="background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(2,196,232,0.6699054621848739) 89%, rgba(0,212,255,1) 100%);">
+<body >
+    
+
     <div style="background: #FFDAB9	;">
      <h1 style="color:blue;text-align: center;">
         Đây là bt thực hành buổi đầu
      </h1>
     </div>
+    <div id="pageHeader">
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>About me</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        </div>
 </body>
+<script>
+    function hideMenu(){
+    var mouseX = window.scrollY;
+    var menu = document.getElementById("pageHeader");
+    if(mouseX > 90){
+        menu.style.height = "50px";
+        menu.style.transition = "height 1s"; /*This is Optional */
+    }else {
+        menu.style.height = "100PX";
+        menu.style.transition = "height 1s";
+    }
+}
+window.addEventListener("scroll",hideMenu);
+</script>
+<style>
+    #pageHeader {
+    height: 100px;
+ 
+    }
+    </style>
 </html>

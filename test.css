@@ -1,0 +1,25 @@
+body {
+    background-color: gold;
+}
+
+#menu {
+    background-color: black;
+    color: white;
+    width: 2000px;
+    height: 130px;
+    position: absolute;
+    top: -42px;
+    left: -800px;
+    padding-top: 38px; 
+    transform: rotate(-10deg);
+    text-align: center;
+}
+
+#menu ul {
+    margin-top: 70px;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 25px;
+}
